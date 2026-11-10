@@ -559,6 +559,115 @@ body {
   }
 }
 
+.video-section {
+  display: flex;
+  min-height: max(514px, 100svh);
+  flex-direction: column;
+  align-items: center;
+  padding: 34px 20px 48px;
+  background: #fff;
+  color: #222;
+  text-align: center;
+}
+
+.video-section-copy {
+  width: 100%;
+}
+
+.video-section-title {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.22;
+}
+
+.video-section-title span {
+  color: var(--newe-green);
+}
+
+.video-section-description {
+  max-width: 185px;
+  margin: 10px auto 0;
+  color: #49505c;
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.video-preview {
+  position: relative;
+  width: min(608px, calc(100vw - 40px));
+  aspect-ratio: 608 / 261;
+  margin-top: 21px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #050505;
+  box-shadow: 0 10px 38px rgba(20, 22, 29, 0.28);
+}
+
+.video-preview-image {
+  position: absolute;
+  top: -55.6%;
+  left: -33.4%;
+  display: block;
+  width: 170.9%;
+  max-width: none;
+  height: auto;
+}
+
+.video-section-cta {
+  display: inline-flex;
+  min-width: 133px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  padding: 0 13px;
+  border-radius: 3px;
+  background: var(--newe-green);
+  color: #10120d;
+  font-size: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 160ms ease;
+}
+
+.video-section-cta:hover {
+  background: #6fc300;
+}
+
+@media (max-width: 760px) {
+  .video-section {
+    min-height: max(514px, 100svh);
+    padding: 38px 18px 46px;
+  }
+
+  .video-section-title {
+    font-size: clamp(18px, 4.8vw, 22px);
+    letter-spacing: -0.04em;
+  }
+
+  .video-section-description {
+    max-width: 290px;
+    margin-top: 12px;
+    font-size: 10px;
+  }
+
+  .video-preview {
+    width: min(608px, calc(100vw - 36px));
+    margin-top: 24px;
+  }
+
+  .video-section-cta {
+    min-width: 180px;
+    height: 42px;
+    margin-top: 22px;
+    font-size: 10px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

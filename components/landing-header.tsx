@@ -54,7 +54,7 @@ export function LandingHeader() {
             <Disc3 aria-hidden="true" size={16} strokeWidth={1.8} />
           </a>
         </div>
-        <a className="signup-link" href="#cadastro">
+        <a className="signup-link" href="#cadastro" id="cadastro">
           Cadastre-se aqui
         </a>
       </div>
