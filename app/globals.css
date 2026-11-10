@@ -577,7 +577,7 @@ body {
 .video-section-title {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: -0.045em;
   line-height: 1.22;
@@ -588,17 +588,17 @@ body {
 }
 
 .video-section-description {
-  max-width: 185px;
+  max-width: 230px;
   margin: 10px auto 0;
   color: #49505c;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 500;
   line-height: 1.45;
 }
 
 .video-preview {
   position: relative;
-  width: min(608px, calc(100vw - 40px));
+  width: min(720px, calc(100vw - 40px));
   aspect-ratio: 608 / 261;
   margin-top: 21px;
   overflow: hidden;
@@ -619,8 +619,8 @@ body {
 
 .video-section-cta {
   display: inline-flex;
-  min-width: 133px;
-  height: 35px;
+  min-width: 150px;
+  height: 40px;
   align-items: center;
   justify-content: center;
   margin-top: 24px;
@@ -628,7 +628,7 @@ body {
   border-radius: 3px;
   background: var(--newe-green);
   color: #10120d;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 160ms ease;
@@ -665,6 +665,34 @@ body {
     height: 42px;
     margin-top: 22px;
     font-size: 10px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .hero-section {
+    min-height: max(377px, calc(100svh - 170px));
+  }
+
+  .hero-copy {
+    padding-top: 68px;
+  }
+
+  .hero-title {
+    margin-top: 13px;
+  }
+
+  .how-it-works {
+    margin-top: 28px;
+  }
+
+  .hero-art {
+    left: 50vw;
+    width: 50vw;
+  }
+
+  .video-section {
+    padding-top: 16px;
+    padding-bottom: 24px;
   }
 }
 
