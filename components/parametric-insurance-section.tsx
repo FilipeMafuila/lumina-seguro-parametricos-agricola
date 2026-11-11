@@ -1,5 +1,5 @@
 const referenceImage =
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Nf4Vlx2hWWoiliwMQ3nemaHmVTlEgV.png'
+  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-g1io5vRT25OJuiICG6W84ApXFrWuit.png'
 
 export function ParametricInsuranceSection() {
   return (
@@ -16,7 +16,8 @@ export function ParametricInsuranceSection() {
 
         <div className="parametric-copy">
           <h2 className="parametric-title" id="parametric-title">
-            Seguro Paramétrico.
+            <span className="parametric-title-lead">Como funciona o</span>
+            <span className="parametric-title-accent">Seguro Paramétrico?</span>
           </h2>
           <p>
             O seguro paramétrico utiliza diferentes indicadores — como{' '}
