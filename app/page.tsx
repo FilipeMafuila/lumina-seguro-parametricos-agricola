@@ -4,6 +4,7 @@ import { VideoPresentationSection } from '@/components/video-presentation-sectio
 import { ParametricInsuranceSection } from '@/components/parametric-insurance-section'
 import { BenefitsSection } from '@/components/benefits-section'
 import { ParticipationSection } from '@/components/participation-section'
+import { SusepRegistrationSection } from '@/components/susep-registration-section'
 import { ContactSection } from '@/components/contact-section'
 
 export default function Page() {
@@ -15,6 +16,7 @@ export default function Page() {
       <ParametricInsuranceSection />
       <BenefitsSection />
       <ParticipationSection />
+      <SusepRegistrationSection />
       <ContactSection />
     </main>
   )
