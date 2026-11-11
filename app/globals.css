@@ -853,6 +853,125 @@ body {
   }
 }
 
+.benefits-section {
+  padding: 44px var(--site-content-gutter) 48px;
+  background: #fff;
+}
+
+.benefits-grid {
+  display: grid;
+  width: min(994px, 100%);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 19px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  display: flex;
+  min-height: 513px;
+  flex-direction: column;
+  padding: 32px;
+  border: 1px solid #c9ced8;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.benefit-card:nth-child(3) {
+  background: #fafafa;
+}
+
+.benefit-icon-badge {
+  position: relative;
+  display: grid;
+  width: 60px;
+  height: 62px;
+  flex: 0 0 auto;
+  place-items: center;
+  margin-bottom: 20px;
+  background: #f1f2f4;
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.benefit-icon {
+  color: #20242a;
+}
+
+.benefit-icon-accent {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  color: var(--newe-green);
+}
+
+.benefit-card:nth-child(2) .benefit-icon-accent {
+  top: 26px;
+  right: 25px;
+}
+
+.benefit-card:nth-child(3) .benefit-icon-accent {
+  top: 25px;
+  right: 24px;
+}
+
+.benefit-title {
+  margin: 0 0 14px;
+  color: #1e2023;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.benefit-description {
+  margin: 0;
+  color: #55575b;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benefit-card {
+    min-height: 460px;
+  }
+
+  .benefit-card:last-child {
+    grid-column: 1 / -1;
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .benefits-section {
+    padding: 32px var(--site-content-gutter) 40px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .benefit-card,
+  .benefit-card:last-child {
+    min-height: 0;
+    padding: 26px;
+  }
+
+  .benefit-title {
+    font-size: 17px;
+  }
+
+  .benefit-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
